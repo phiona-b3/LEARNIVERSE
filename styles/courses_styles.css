@@ -335,6 +335,12 @@ section
 	margin-left: 3px;
 }
 
+.logo_img {
+	width: 5rem;
+	height: 5rem;
+	border-radius: 50%;
+}
+
 /*********************************
 3.2 Main Nav
 *********************************/
