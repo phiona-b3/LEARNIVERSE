@@ -96,7 +96,7 @@ p a
 	display: inline;
 	position: relative;
 	color: inherit;
-	border-bottom: solid 1px #ffa07f;
+	border-bottom: solid 1px #5068A9;
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
 	-ms-transition: all 200ms ease;
@@ -126,7 +126,7 @@ p a:hover::after
 }
 ::selection
 {
-	background: #FFD266;
+	background: #5068A9;
 	color: #C88E00;
 }
 p::selection
@@ -344,6 +344,13 @@ section
 	margin-left: 3px;
 }
 
+/*change of logo dimensions 8*/
+.logo_img {
+	width: 5rem;
+	height: 5rem;
+	border-radius: 50%;
+}
+
 /*********************************
 3.2 Main Nav
 *********************************/
@@ -353,6 +360,7 @@ section
 	display: inline-block;
 	margin-left: auto;
 	padding-right: 93px;
+	/*border-radius: 12%;*/
 }
 .main_nav
 {
@@ -382,7 +390,7 @@ section
 }
 .main_nav_item a:hover
 {
-	color: #ffb606;
+	color: #5068A9;
 }
 
 /*********************************
@@ -393,7 +401,7 @@ section
 {
 	width: 279px;
 	height: 100%;
-	background: #ffb606;
+	background: #5068A9;
 }
 .header_side img
 {
