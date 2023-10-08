@@ -379,7 +379,7 @@ section
 }
 .main_nav_item a:hover
 {
-	color: #ffb606;
+	color: #CD5C08;
 	text-decoration: underline;
 }
 
@@ -391,7 +391,7 @@ section
 {
 	width: 279px;
 	height: 100%;
-	background: #ffb606;
+	background: #176B87;
 }
 .header_side img
 {
@@ -669,7 +669,7 @@ section
 	-ms-transform: translateX(-50%);
 	-o-transform: translateX(-50%);
 	transform: translateX(-50%);
-	background: #ffb606;
+	background: #176B87;
 	padding-top: 24px;
 	padding-bottom: 18px;
 	padding-left: 39px;
@@ -723,7 +723,7 @@ section
 	width: 55px;
 	height: 4px;
 	content: '';
-	background: #ffb606;
+	background: #CD5C08;
 }
 
 /*********************************
@@ -842,7 +842,7 @@ section
 {
 	width: 67px;
 	height: 67px;
-	background: #ffb606;
+	background: #CD5C08;
 	margin-left: auto;
 }
 .course_price span
@@ -900,7 +900,7 @@ section
 	width: 164px;
 	height: 42px;
 	border: none;
-	background: #ffb606;
+	background: #CD5C08;
 	color: #FFFFFF;
 	font-size: 14px;
 	font-weight: 500;
