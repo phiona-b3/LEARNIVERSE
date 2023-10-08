@@ -61,7 +61,7 @@
 .logo_container
 {
 	display: inline-block;
-	padding-left: 76px;
+	padding-left: 40px;
 }
 .logo span
 {
@@ -94,7 +94,7 @@
 {
 	display: inline-block;
 	margin-left: auto;
-	padding-right: 93x;
+	padding-right: 20px;
 	
 }
 
@@ -133,7 +133,7 @@
 .main_nav_item a:hover
 {
 	color: #176B87;
-
+    text-decoration: underline;
 }
 
 /*********************************
@@ -250,7 +250,7 @@ label, input {
 }
 
 ::placeholder {
-    color: #000;
+    color: #0000007e;
 }
 
 legend {
@@ -263,6 +263,8 @@ legend {
 button {
     width: 100%;
     border: transparent;
+	background-color: #FFFFFF;
+	
 }
 
 .flex {
@@ -274,7 +276,12 @@ button {
     background-color: #CD5C08 !important;
     margin-top: 20px;
     padding: 50px;
-  }
+}
+
+button:hover{
+	background-color:rgb(232, 228, 228);
+}
+
 
   #lastName {
     width: 25%;
