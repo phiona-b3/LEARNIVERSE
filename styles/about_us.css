@@ -3,6 +3,11 @@
 
 /******************************
 
+COLOR PALETTE
+
+
+
+
 [Table of Contents]
 
 1. Fonts
@@ -16,16 +21,22 @@
 	4.1 Menu Social
 	4.2 Menu copyright
 5. Home
+	5.1 Hero Slider
+	5.2 Hero Slider Navigation
+6. Hero Boxes
 7. Page Section
 8. Buttons
-9. News
-	9.1 Comments
-	9.2 Leave Comment
-10. Sidebar
-11. Footer
-	11.1 Newsletter
-	11.2 Footer Content
-	11.3 Footer Copyright
+9. Popular
+10. Register
+11. Search
+	11.1 Search Form
+12. Services
+13. Testimonials
+14. Events
+15. Footer
+	15.1 Newsletter
+	15.2 Footer Content
+	15.3 Footer Copyright
 
 
 ******************************/
@@ -333,6 +344,7 @@ section
 	margin-left: 3px;
 }
 
+/*change of logo dimensions 8*/
 .logo_img {
 	width: 5rem;
 	height: 5rem;
@@ -377,7 +389,7 @@ section
 }
 .main_nav_item a:hover
 {
-	color: #ffb606;
+	color: #176B87;
 	text-decoration: underline;
 }
 
@@ -431,7 +443,7 @@ section
 }
 .hamburger_container:hover i
 {
-	color: #ffb606;
+	color: #176B87;
 }
 
 /*********************************
@@ -509,7 +521,7 @@ section
 }
 .menu_item a:hover
 {
-	color: #ffb606;
+	color: #CD5C08;
 }
 .menu_close_container
 {
@@ -556,7 +568,7 @@ section
 .menu_close_container:hover .menu_close,
 .menu_close_container:hover .menu_close::after
 {
-	background: #ffb606;
+	background: #176B87;
 }
 
 /*********************************
@@ -582,11 +594,7 @@ section
 .menu_social_item
 {
 	display: inline-block;
-	margin-right: 27px;
-}
-.menu_social_item:last-child
-{
-	margin-right: 0px;
+	margin-right: 30px;
 }
 .menu_social_item a i
 {
@@ -594,7 +602,7 @@ section
 }
 .menu_social_item a i:hover
 {
-	color: #ffb606;
+	color: #176B87;
 }
 .menu_container.active .menu_social_container
 {
@@ -643,47 +651,202 @@ section
 .home
 {
 	width: 100%;
-	height: 447px;
+	height: 100vh;
 }
-.home_background_container
+
+/*********************************
+5.1 Hero Slider
+*********************************/
+
+.hero_slider_container
+{
+	width: 100%;
+	height: 100%;
+}
+.hero_slide
+{
+	width: 100%;
+	height: 100%;
+}
+.hero_slide_background
 {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-}
-.home_background
-{
-	width: 100%;
-	height: 100%;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
 }
-.home_content
+.hero_slide_container
 {
-	position: absolute;
-	left: 50%;
-	bottom: 109px;
-	-webkit-transform: translateX(-50%);
-	-moz-transform: translateX(-50%);
-	-ms-transform: translateX(-50%);
-	-o-transform: translateX(-50%);
-	transform: translateX(-50%);
-	background: #176B87;
-	padding-top: 24px;
-	padding-bottom: 18px;
-	padding-left: 39px;
-	padding-right: 42px;
+	width: 100%;
+	height: 100vh;
 }
-.home_content h1
+.hero_slide_content
+{
+	max-width: 80%;
+	-webkit-transform: translateY(30px);
+	-moz-transform: translateY(30px);
+	-ms-transform: translateY(30px);
+	-o-transform: translateY(30px);
+	transform: translateY(30px);
+}
+.hero_slide_content h1
 {
 	font-size: 72px;
 	font-weight: 400;
+	color:whitesmoke;
+
+}
+.hero_slide_content h1 span
+{
+	background: #176B87;
+	padding-left: 13px;
+	padding-right: 13px;
+	margin-left: -12px;
+	margin-right: -12px;
+}
+.animated
+{
+	-webkit-animation-duration : 1s !important;
+	animation-duration : 1s !important;
+	-webkit-animation-delay : 500ms;
+	animation-delay : 500ms;
+}
+.animate-out
+{
+	-webkit-animation-delay : 0ms;
+	animation-delay : 0ms;
+}
+
+/*********************************
+5.2 Hero Slider Navigation
+*********************************/
+
+.hero_slider_nav
+{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(calc(-50% + 30px));
+	width: 58px;
+	height: 58px;
+	background: #FFFFFF;
+	z-index: 9;
+	cursor: pointer;
+}
+.hero_slider_nav:hover
+{
+	background: #176B87;
+}
+.hero_slider_nav:hover span
+{
 	color: #FFFFFF;
-	line-height: 0.5;
-	white-space: nowrap;
+}
+.hero_slider_nav span
+{
+	display: block;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 700;
+	color: #121212;
+	line-height: 1;
+}
+.hero_slider_left
+{
+	left: 4.32%;
+}
+.hero_slider_right
+{
+	right: 4.32%;
+}
+
+/*********************************
+6. Hero Boxes
+*********************************/
+
+.hero_boxes
+{
+	width: 100%;
+	height: 0px;
+	z-index: 9;
+	padding-top: 0px;
+}
+.hero_boxes_inner
+{
+	position: absolute;
+	top: -212px;
+	left: 0;
+	width: 100%;
+}
+.hero_box
+{
+	width: 100%;
+	height: 161px;
+	background: #1a1a1a;
+	padding-left: 50px;
+	cursor: pointer;
+}
+.hero_box:hover
+{
+	background: #176B87;
+}
+.hero_box img
+{
+	width: 62px;
+	height: auto;
+	margin-top: -6px;
+}
+.svg path
+{
+	fill: #CD5C08;
+}
+.hero_box svg
+{
+	width: 62px;
+	height: auto;
+}
+.hero_box:hover svg path
+{
+	fill: #FFFFFF;
+}
+.hero_box_content
+{
+	padding-left: 13px;
+	padding-top: 11px;
+	margin-top: -6px;
+}
+.hero_box_title
+{
+	font-size: 24px;
+	font-weight: 500;
+	color: #FFFFFF;
+	margin-bottom: 7px;
+}
+.hero_box_link
+{
+	font-size: 12px;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	padding-left: 3px;
+}
+.hero_box_link:hover
+{
+	color: #1a1a1a;
 }
 
 /*********************************
@@ -734,7 +897,6 @@ section
 .button:hover
 {
 	box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
-	
 }
 .button a
 {
@@ -750,141 +912,473 @@ section
 }
 
 /*********************************
-9. Contact
+9. Popular
 *********************************/
+/*
+.popular
+{
 
-.contact
-{
-	padding-top: 106px;
-	padding-bottom: 117px;
 }
-.contact_title
+.course_boxes
 {
-	font-size: 36px;
+	margin-top: 68px;
+}
+.card
+{
+	display: block;
+	background: #f8f9fb;
+	border: none;
+}
+.card-img-top
+{
+	border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.card-body
+{
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.card-title
+{
+	margin-top: 55px;
+}
+.card-title a
+{
+	font-size: 22px;
 	font-weight: 500;
 	color: #1a1a1a;
+	line-height: 1.2;
 }
-.contact_form_container
+.card-title a:hover
 {
-	margin-top: 70px;
+	color: #a5a5a5;
+}
+.card-text
+{
+	font-size: 14px;
+	font-weight: 500;
+	color: #a5a5a5;
+	margin-top: -12px;
+}
+.price_box
+{
+	width: 100%;
+	height: 67px;
+	background: #eaebec;
+	margin-top: 41px;
+	padding-left: 35px;
+}
+.course_author_image
+{
+	width: 46px;
+	height: 46px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.course_author_name
+{
+	font-size: 14px;
+	font-weight: 500;
+	color: #1a1a1a;
+	padding-left: 20px;
+	margin-top: 7px;
+}
+.course_author_name span
+{
+	color: #a5a5a5;
+}
+.course_price
+{
+	width: 67px;
+	height: 67px;
+	background: #CD5C08;
+	margin-left: auto;
+}
+.course_price span
+{
+	color: #FFFFFF;
+	font-size: 18px;
+	font-weight: 500;
+	margin-top: 7px;
+}*/
+
+/*********************************
+10. Register
+*********************************/
+
+.register
+{
+	width: 100%;
+}
+.register_section
+{
+	width: 100%;
+	background: #176B87;
+	padding-top: 156px;
+	padding-bottom: 161px;
+}
+.register_content
+{
+	width: 522px;
+}
+.register_title
+{
+	color: #FFFFFF;
+	margin-bottom: 16px;
+	line-height: 1.63;
+}
+.register_title:last-child
+{
+	margin-bottom: 0px;
+}
+.register_title	span
+{
+	color: #1a1a1a;
+}
+.register_text
+{
+	color: #FFFFFF;
+	font-weight: 500;
+	margin-top: 32px;
+	padding-left: 25px;
+	padding-right: 25px;
+	margin-bottom: 0px;
+}
+.register_button
+{
+	background: #1a1a1a;
+	margin-top: 65px;
+}
+.register_button a
+{
+	color: #FFFFFF;
+}
+
+/*********************************
+11. Search
+*********************************/
+
+.search_section
+{
+	width: 100%;
+	height: 100%;
+	background: #ececec;
+}
+.search_content
+{
+	width: 522px;
+}
+.search_background
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	opacity: 0.23;
+}
+.search_title
+{
+	color: #1a1a1a;
+}
+
+/*********************************
+11.1 Search Form
+*********************************/
+
+.search_form
+{
+	margin-top: 57px;
 }
 .input_field
 {
 	width: 100%;
-	background: #f8f4f4;
-	border: solid 2px transparent;
-	margin-bottom: 24px;
 	height: 42px;
-	padding-left: 33px;
+	background: #FFFFFF;
+	box-sizing: border-box;
+	border: solid 2px #FFFFFF;
+	padding-left: 25px;
+	margin-bottom: 24px;
+}
+input:last-of-type
+{
+	margin-bottom: 0px;
 }
 .input_field:focus
 {
 	outline: none !important;
-	border-color: #CD5C08;
+	border: solid 2px #CD5C08;
 }
-.text_field
-{
-	width: 100%;
-	height: 189px;
-	background: #f8f4f4;
-	border: solid 2px transparent;
-	padding-left: 33px;
-	margin-bottom: 24px;
-}
-.text_field:focus
-{
-	outline: none !important;
-	border-color: #CD5C08;
-}
-.contact_send_btn
+.search_submit_button
 {
 	width: 100%;
 	height: 48px;
 	background: #CD5C08;
-	font-size: 14px;
-	font-weight: 700;
-	text-transform: uppercase;
 	color: #FFFFFF;
-	cursor: pointer;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-top: 28px;
 	border: none;
+	cursor: pointer;
 }
-.contact_send_btn:focus
+.search_submit_button:hover
 {
-	outline: solid 1px #CD5C08;
-	border: green !important;
-}
-
-.contact_send_btn:hover{
 	box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
 }
+.search_submit_button:focus
+{
+	outline: solid 2px #FFFFFF;
+}
 
 /*********************************
-10. About
+12. Services
 *********************************/
 
-.about_title
+.services
 {
-	font-size: 36px;
+	padding-bottom: 76px;
+}
+.services_row
+{
+	margin-top: 65px;
+}
+.service_item
+{
+	margin-bottom: 41px;
+}
+.service_item h3
+{
+	font-family: 'Roboto', sans-serif;
+	font-size: 22px;
 	font-weight: 500;
 	color: #1a1a1a;
+	margin-bottom: 13px;
 }
-.about_text
-{
-	margin-top: 20px;
-}
-.contact_info
-{
-	margin-top: 64px;
-	padding-left: 46px;
-}
-.contact_info_item
+.service_item p
 {
 	font-size: 14px;
-	font-weight: 400;
+	font-weight: 500;
 	color: #a5a5a5;
-	margin-bottom: 22px;
-}
-.contact_info_item:last-child
-{
+	max-width: 100%;
 	margin-bottom: 0px;
 }
-.contact_info_icon
+.icon_container
 {
-	display: inline-block;
-	width: 24px;
-	height: 24px;
-	vertical-align: middle;
-	margin-right: 10px;
+	height: 41px;
+	width: auto;
+	margin-bottom: 30px;
 }
-.contact_info_icon img
+.icon_container img
 {
-	width: 100%;
+	height: 100%;
+}
+
+
+/*ABOUT US*/
+
+.about_us {
+    color: black; 
+    padding-top: 10rem; 
+    align-items: center;
+}
+
+.section {
+    color: black; 
+    padding-top: 10rem; 
+    align-items: center;
+}
+
+.goals h1 {
+    color: black;
 }
 
 /*********************************
-11. Google Map
+13. Testimonials
 *********************************/
 
-#google_map
+.testimonials
 {
 	width: 100%;
-	height: 532px;
-	margin-top: 117px;
+	background: #1a1a1a;
 }
-.map_container
+.testimonials_background_container
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.testimonials_background
 {
 	width: 100%;
 	height: 100%;
-	overflow: hidden;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	opacity: 0.27;
 }
-#map
+.testimonials .section_title h1
+{
+	color: #FFFFFF;
+}
+.testimonials_slider_container
+{
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-top: 56px;
+}
+.testimonials_item
 {
 	width: 100%;
-	height: calc(100% + 30px);
+	padding-bottom: 75px;
+}
+.quote
+{
+	font-size: 36px;
+	color: #CD5C08;
+}
+.testimonials_text
+{
+	color: #FFFFFF;
+	margin-bottom: 0px;
+}
+.testimonial_user
+{
+	margin-top: 43px;
+}
+.testimonial_image
+{
+	width: 98px;
+	height: 98px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.testimonial_image img
+{
+	width: 100%;
+	height: auto;
+}
+.testimonial_name
+{
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #CD5C08;
+	margin-top: 21px;
+}
+.testimonial_title
+{
+	font-size: 14px;
+	font-weight: 500;
+	color: #FFFFFF;
+	margin-top: 6px;
+}
+.testimonials_slider .owl-dots
+{
+	display: -webkit-box !important;
+	display: -moz-box !important;
+	display: -ms-flexbox !important;
+	display: -webkit-flex !important;
+	display: flex !important;
+	flex-direction: row !important;
+	justify-content: center;
+	align-items: center;
+}
+.testimonials_slider .owl-dot span
+{
+	width: 8px !important;
+	height: 8px !important;
+	border: solid 2px #FFFFFF;
+	background: transparent !important;
+}
+.testimonials_slider .owl-dot.active span
+{
+	width: 16px !important;
+	height: 16px !important;
+	border: none;
+	background: #CD5C08 !important;
 }
 
 /*********************************
-12. Footer
+14. Events
+*********************************/
+
+.event_items
+{
+	margin-top: 68px;
+}
+.event_item
+{
+	margin-bottom: 56px;
+}
+.event_item:last-child
+{
+	margin-bottom: 0px;
+}
+.event_date
+{
+	width: 131px;
+	height: 131px;
+	border: solid 2px #CD5C08;
+	margin-bottom: 18px;
+}
+.event_day
+{
+	font-size: 48px;
+	font-weight: 700;
+	color: #CD5C08;
+	margin-bottom: 1px;
+	line-height: 1;
+}
+.event_month
+{
+	font-size: 16px;
+	font-weight: 700;
+	color: #CD5C08;
+}
+.event_name a
+{
+	font-size: 22px;
+	font-weight: 500;
+	color: #1a1a1a;
+}
+.event_name a:hover
+{
+	color: #CD5C08;
+}
+.event_location
+{
+	font-size: 14px;
+	font-weight: 500;
+	color: #1a1a1a;
+	margin-top: 2px;
+}
+.event_content p
+{
+	font-weight: 500;
+	color: #a5a5a5;
+	margin-top: 21px;
+	margin-bottom: 13px;
+}
+.event_image
+{
+
+}
+.event_image img
+{
+	width: 100%;
+}
+
+/*********************************
+15. Footer
 *********************************/
 
 .footer
@@ -899,7 +1393,7 @@ section
 }
 
 /*********************************
-12.1 Newsletter
+15.1 Newsletter
 *********************************/
 
 .newsletter
@@ -942,7 +1436,7 @@ section
 }
 
 /*********************************
-12.2 Footer Content
+15.2 Footer Content
 *********************************/
 
 .footer_content 
@@ -992,7 +1486,7 @@ section
 }
 .footer_list_item a:hover
 {
-	color: #CD5C08;
+	color: #ffb606;
 }
 .footer_contact_item
 {
@@ -1019,7 +1513,7 @@ section
 }
 
 /*********************************
-12.3 Footer Copyright
+15.3 Footer Copyright
 *********************************/
 
 .footer_bar
