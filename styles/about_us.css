@@ -1195,9 +1195,10 @@ input:last-of-type
     align-items: center;
 }
 
-.goals h1 {
-    color: black;
-}
+/* .goals h1 {
+    color: white;
+} */
+
 
 /*********************************
 13. Testimonials
@@ -1314,10 +1315,12 @@ input:last-of-type
 .event_items
 {
 	margin-top: 68px;
+	
 }
 .event_item
 {
 	margin-bottom: 56px;
+
 }
 .event_item:last-child
 {
