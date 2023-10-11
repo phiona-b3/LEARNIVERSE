@@ -346,8 +346,8 @@ section
 
 /*change of logo dimensions 8*/
 .logo_img {
-	width: 5rem;
-	height: 5rem;
+	width: 3rem;
+	height: 3rem;
 	border-radius: 50%;
 }
 
@@ -431,8 +431,8 @@ section
 	-ms-transform: translateY(-50%);
 	-o-transform: translateY(-50%);
 	transform: translateY(-50%);
-	right: 20px;
-	display: none;
+	right: 30px;
+	display: block;
 	cursor: pointer;
 }
 .hamburger_container i
@@ -686,6 +686,7 @@ section
     bottom: 0; 
     z-index: -1;
     width: 100%;
+	border-bottom: 10rem;
 }
 
 .hero_slide_container
