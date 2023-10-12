@@ -1,2 +1,0 @@
-# LEARNIVERSE
-An education website
