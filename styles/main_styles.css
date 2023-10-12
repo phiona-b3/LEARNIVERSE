@@ -432,7 +432,7 @@ section
 	-o-transform: translateY(-50%);
 	transform: translateY(-50%);
 	right: 30px;
-	display: block;
+	display: none;
 	cursor: pointer;
 }
 .hamburger_container i
