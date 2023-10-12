@@ -73,7 +73,7 @@ We would like to thank women techsters Tech4dev for their generous support and g
 
 - Ugochinyerem Uwaoma​
 
-- Ayoola Tosin Bejide​
+- Ayoola Tosin Bejide​ https://github.com/Ayoolabejide
 
 - Heeba Hassan Ahmed​
 
