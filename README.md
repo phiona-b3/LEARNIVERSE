@@ -112,6 +112,9 @@ If you have any feedback, please reach out to us at phiona030303@gmail.com
 Javascript, HTML, CSS...
 
 
-![Logo](![image](https://github.com/phiona-b3/LEARNIVERSE/assets/102053232/60f3446f-0fb7-462d-91eb-dcd209ed43b0)
-)
+##  Logo
+![image](https://github.com/phiona-b3/LEARNIVERSE/assets/102053232/c80cd454-297e-443c-bd6e-9387b4ec39d0)
+
+
+
 
