@@ -5,6 +5,9 @@
 # LEARNIVERSE
 
 Learniverse is a non-profit website is committed to supporting inclusive and high-quality education for all regardless of socioeconomic status. It acts as a repository for data on educational equality, offers instructors tools, and supports programmes aimed at enhancing access to education in underprivileged areas. The organization is open to donations to support initiatives that help children who are disadvantaged.
+
+
+
 ![image](https://github.com/phiona-b3/LEARNIVERSE/assets/102053232/1bb4b261-e942-4890-9bb1-5a17fdb055f8)
 ![image](https://github.com/phiona-b3/LEARNIVERSE/assets/102053232/4cf94867-3b52-40a9-bc94-9f28b9d7756d)
 ![image](https://github.com/phiona-b3/LEARNIVERSE/assets/102053232/efcb43ec-62ed-410d-bc50-37a347953c18)
